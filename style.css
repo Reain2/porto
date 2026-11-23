@@ -534,9 +534,9 @@ body {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  max-width: 900px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -653,3 +653,24 @@ body {
     display: none; /* Fallback sederhana bila layar sangat kecil, logo tetap ada */
   }
 }
+
+/* Animasi Halus & Terukur (Sesuai COMPONENT-REFERENCES.md & MOTION Dial 2) */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 450ms cubic-bezier(0.16, 1, 0.3, 1), transform 450ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
