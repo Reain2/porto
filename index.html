@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samuel Rain Gunawan | Portofolio</title>
-  <meta name="description" content="Portofolio resmi Samuel Rain Gunawan - Rekayasa Perangkat Lunak, Web Development, Multimedia & IT Support.">
+  <title>Samuel Rain Gunawan &bull; Portofolio</title>
+  <meta name="description" content="Portofolio resmi Samuel Rain Gunawan: Rekayasa Perangkat Lunak, Web Development, Multimedia dan IT Support.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header / Navbar -->
+  <!-- Header / Navigasi -->
   <header class="navbar">
     <div class="container nav-container">
-      <a href="#hero" class="nav-logo">SRG<span>.</span></a>
-      <nav class="nav-links">
+      <a href="#hero" class="nav-logo" aria-label="Beranda Samuel Rain Gunawan">SRG<span>.</span></a>
+      <nav class="nav-links" aria-label="Navigasi Utama">
         <a href="#about">Tentang</a>
         <a href="#experience">Pengalaman</a>
         <a href="#achievements">Prestasi</a>
-        <a href="#projects">Proyek</a>
+        <a href="#projects">Karya</a>
         <a href="#skills">Keahlian</a>
         <a href="#contact" class="nav-cta">Kontak</a>
       </nav>
@@ -31,229 +31,248 @@
     <section id="hero" class="hero section">
       <div class="container hero-content">
         <div class="hero-text">
-          <span class="badge">Siswa Rekayasa Perangkat Lunak</span>
-          <h1>Samuel Rain Gunawan</h1>
+          <div class="meta-tag">SMK Cinta Kasih Tzu Chi &bull; Rekayasa Perangkat Lunak</div>
+          <h1 class="hero-title">Samuel Rain Gunawan</h1>
           <p class="hero-desc">
-            Siswa SMK Cinta Kasih Tzu Chi dengan fokus pada Web Development, IT Support, dan Multimedia. 
-            Terbiasa memecahkan masalah teknis, membangun solusi sistem aplikasi, serta berkolaborasi dalam tim secara profesional.
+            Siswa Rekayasa Perangkat Lunak dengan pengalaman praktik di bidang Web Development, IT Support perkantoran, dan produksi multimedia siaran. Memiliki rekam jejak kompetisi nasional, berorientasi pada pemecahan masalah teknis nyata dan kerja sama tim.
           </p>
           <div class="hero-actions">
             <a href="mailto:samuelsofficials28@gmail.com" class="btn btn-primary">Kirim Email</a>
-            <a href="https://wa.me/6281298282154" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">WhatsApp</a>
+            <a href="https://wa.me/6281298282154" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">WhatsApp: 0812-9828-2154</a>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="avatar-wrapper">
-            <!-- Jika foto profil ditaruh di assets/images/profile.jpg akan otomatis tampil, jika tidak ada fallback ke inisial -->
-            <img src="assets/images/profile.jpg" alt="Samuel Rain Gunawan" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
-            <div id="avatar-fallback" class="avatar-fallback">SRG</div>
+
+        <div class="hero-aside">
+          <div class="profile-frame">
+            <img src="assets/images/profile.jpg" alt="Foto Samuel Rain Gunawan" class="profile-img" onerror="this.style.display='none'; document.getElementById('profile-placeholder').style.display='flex';">
+            <div id="profile-placeholder" class="profile-placeholder" aria-label="Foto profil belum diunggah">
+              <span class="placeholder-initials">SRG</span>
+              <span class="placeholder-note">Aset foto: assets/images/profile.jpg</span>
+            </div>
           </div>
-          <div class="quick-status">
-            <div class="status-indicator"></div>
-            <span>Rata-rata Akademik 90+ &bull; Target Lulus 2027</span>
+          <div class="metric-badge">
+            <span class="metric-label">Status Akademik</span>
+            <span class="metric-value">Rata-rata 90+ (Kelulusan 2027)</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Tentang & Pendidikan -->
-    <section id="about" class="section">
+    <!-- Pendidikan & Kepemimpinan -->
+    <section id="about" class="section section-border">
       <div class="container">
-        <h2 class="section-title">Pendidikan & Organisasi</h2>
+        <div class="section-header">
+          <span class="section-tag">Profil</span>
+          <h2 class="section-title">Pendidikan & Kepemimpinan</h2>
+        </div>
         <div class="grid-2">
-          <div class="card">
-            <div class="card-tag">Pendidikan Formal</div>
-            <h3>SMK Cinta Kasih Tzu Chi</h3>
-            <p class="card-meta">Jakarta, Indonesia | 2024 – Sekarang (Target 2027)</p>
-            <p class="card-body">
-              Jurusan Rekayasa Perangkat Lunak (RPL). Capaian nilai akademik rata-rata 90+. 
-              Fokus pembelajaran mencakup Web Dinamis, Basis Data, Coding & Algoritma, Desain Grafis, dan Software Engineering.
+          <article class="card">
+            <span class="card-kicker">Pendidikan Formal</span>
+            <h3 class="card-heading">SMK Cinta Kasih Tzu Chi</h3>
+            <p class="card-meta">Jakarta Barat &bull; 2024 sampai 2027 (Diperkirakan)</p>
+            <p class="card-text">
+              Kompetensi Keahlian Rekayasa Perangkat Lunak (RPL). Pembelajaran produktif mencakup Web Dinamis, Basis Data Relasional, Pemrograman Berorientasi Objek, Desain Grafis, dan Rekayasa Perangkat Lunak dengan pencapaian rata-rata akademik di atas 90.
             </p>
-          </div>
-          <div class="card">
-            <div class="card-tag">Kepemimpinan</div>
-            <h3>Multimedia & Soundmedia Leader</h3>
-            <p class="card-meta">ROHKRIS SMK Cinta Kasih Tzu Chi | Nov 2024 – Nov 2026</p>
-            <p class="card-body">
-              Memimpin dan mengoordinasikan seluruh aktivitas multimedia serta technical support untuk ibadah mingguan dan agenda keagamaan sekolah. 
-              Membimbing dan melatih anggota junior dalam instalasi, konfigurasi, serta operasional sistem audio-visual.
+          </article>
+          <article class="card">
+            <span class="card-kicker">Kepemimpinan Sekolah</span>
+            <h3 class="card-heading">Multimedia & Soundmedia Leader</h3>
+            <p class="card-meta">ROHKRIS SMK Cinta Kasih Tzu Chi &bull; November 2024 sampai November 2026</p>
+            <p class="card-text">
+              Memimpin divisi teknis multimedia dan audio untuk peribadatan mingguan dan kegiatan institusional sekolah. Bertanggung jawab terhadap kesiapan perangkat siar, pembagian tugas anggota, serta pelatihan operasional bagi staf junior.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Pengalaman Kerja -->
-    <section id="experience" class="section bg-alt">
+    <!-- Pengalaman Kerja & PKL -->
+    <section id="experience" class="section section-alt section-border">
       <div class="container">
-        <h2 class="section-title">Pengalaman Kerja</h2>
+        <div class="section-header">
+          <span class="section-tag">Riwayat Kerja</span>
+          <h2 class="section-title">Pengalaman Kerja & PKL</h2>
+        </div>
         <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">1 Juli 2026 – 30 September 2026</div>
-            <div class="timeline-content card">
-              <span class="role-badge">Magang</span>
-              <h3>Humanitarian Production (HM PRO) &bull; DAAI TV</h3>
+          <article class="timeline-row">
+            <div class="timeline-period">
+              <span class="period-text">1 Juli 2026 &ndash; 30 September 2026</span>
+              <span class="type-pill">Magang Industri</span>
+            </div>
+            <div class="timeline-body card">
+              <h3 class="card-heading">Humanitarian Production (HM PRO) &bull; DAAI TV</h3>
+              <p class="card-meta">Media Penyiaran &bull; Jakarta</p>
               <ul class="task-list">
-                <li>Menjalankan tugas timecoding dan transkripsi untuk pengorganisasian alur rekaman konten media.</li>
-                <li>Melakukan proses video editing sesuai standar penyiaran tayangan kemanusiaan.</li>
-                <li>Terlibat langsung dalam operasional tapping (rekaman) untuk episode mingguan di lapangan maupun studio.</li>
+                <li>Melakukan pencatatan timecoding terperinci dan transkripsi materi visual untuk alur pascaproduksi siaran.</li>
+                <li>Menyunting video (editing) sesuai dengan panduan visual dan kebutuhan konten kemanusiaan mingguan.</li>
+                <li>Terlibat aktif dalam operasional penyiapan serta rekaman tapping siaran berkala.</li>
               </ul>
             </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">Januari 2026 – April 2026</div>
-            <div class="timeline-content card">
-              <span class="role-badge">Praktik Kerja Lapangan (PKL)</span>
-              <h3>General Support Intern &bull; Zenbu Head Office</h3>
+          </article>
+
+          <article class="timeline-row">
+            <div class="timeline-period">
+              <span class="period-text">Januari 2026 &ndash; April 2026</span>
+              <span class="type-pill">Praktik Kerja Lapangan</span>
+            </div>
+            <div class="timeline-body card">
+              <h3 class="card-heading">General Support Intern &bull; Zenbu Head Office</h3>
+              <p class="card-meta">Kantor Pusat Zenbu &bull; IT Support & Infrastruktur</p>
               <ul class="task-list">
-                <li>Titik kontak utama gangguan teknis, mendiagnosis dan menyelesaikan troubleshooting PC dan printer kantor dalam rata-rata 5–10 menit.</li>
-                <li>Memelihara kestabilan jaringan lokal dan konfigurasi IP perangkat kerja di lingkungan kantor multi-device.</li>
-                <li>Menjaga kesiapan perangkat operasional harian kantor agar tidak terjadi downtime kerja tim.</li>
+                <li>Titik penanganan pertama untuk gangguan teknis PC, printer, dan kelengkapan periferal kantor dengan penyelesaian rata-rata 5 sampai 10 menit.</li>
+                <li>Memantau stabilitas konektivitas jaringan lokal serta mengonfigurasi IP address pada perangkat operasional.</li>
+                <li>Menghindari hambatan operasional administrasi melalui pemeriksaan perangkat rutin.</li>
               </ul>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Prestasi -->
-    <section id="achievements" class="section">
+    <!-- Prestasi Kompetisi -->
+    <section id="achievements" class="section section-border">
       <div class="container">
-        <h2 class="section-title">Prestasi Kompetisi</h2>
+        <div class="section-header">
+          <span class="section-tag">Kompetisi</span>
+          <h2 class="section-title">Prestasi & Penghargaan</h2>
+        </div>
         <div class="grid-3">
-          <div class="card feat-card">
-            <div class="feat-badge gold">Juara 1</div>
-            <h3>LKS Web Development Tingkat Kota</h3>
-            <p class="card-meta">Jakarta Barat &bull; Apr – Mei 2025</p>
-            <p class="card-body">Lomba Keterampilan Siswa (LKS) Nasional Tingkat Kota bidang Desain Laman (Web Development) dengan implementasi aplikasi sistem perpustakaan.</p>
-          </div>
-          <div class="card feat-card">
-            <div class="feat-badge silver">Juara 2</div>
-            <h3>Technofest / Agentic AI</h3>
+          <article class="card feat-card">
+            <span class="rank-badge rank-1">Juara 1</span>
+            <h3 class="card-heading">LKS Web Development</h3>
+            <p class="card-meta">Tingkat Kota Jakarta Barat &bull; April sampai Mei 2025</p>
+            <p class="card-text">Lomba Keterampilan Siswa bidang Desain Laman (Web Development) dengan implementasi aplikasi sistem perpustakaan berbasis Laravel Breeze.</p>
+          </article>
+
+          <article class="card feat-card">
+            <span class="rank-badge rank-2">Juara 2</span>
+            <h3 class="card-heading">Technofest / Agentic AI</h3>
             <p class="card-meta">Universitas Bunda Mulia &bull; 2026</p>
-            <p class="card-body">Kompetisi teknologi berfokus pada inovasi dan pemanfaatan konsep Agentic AI dalam menyelesaikan persoalan praktis.</p>
-          </div>
-          <div class="card feat-card">
-            <div class="feat-badge bronze">Top 10 Finalist</div>
-            <h3>Junior Data Science Competition (JDSC)</h3>
-            <p class="card-meta">Universitas BINUS (Tingkat Nasional) &bull; Sep – Nov 2024</p>
-            <p class="card-body">Kompetisi data science tingkat nasional untuk kategori junior, menguji kapabilitas analisis data, komputasi, dan pemecahan masalah.</p>
-          </div>
+            <p class="card-text">Kompetisi teknologi berfokus pada perancangan solusi terapan dan pemanfaatan paradigma kecerdasan buatan berbasis agen.</p>
+          </article>
+
+          <article class="card feat-card">
+            <span class="rank-badge rank-3">Top 10 Finalist</span>
+            <h3 class="card-heading">Junior Data Science Competition</h3>
+            <p class="card-meta">Universitas BINUS (Tingkat Nasional) &bull; September sampai November 2024</p>
+            <p class="card-text">Kompetisi data science tingkat nasional yang menguji pemodelan data, logika komputasi, dan penyusunan wawasan analitis.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Proyek & Karya -->
-    <section id="projects" class="section bg-alt">
+    <section id="projects" class="section section-alt section-border">
       <div class="container">
-        <h2 class="section-title">Proyek & Karya</h2>
+        <div class="section-header">
+          <span class="section-tag">Portofolio</span>
+          <h2 class="section-title">Proyek & Karya Pilihan</h2>
+        </div>
         <div class="grid-3">
-          <div class="card project-card">
-            <div class="project-header">
-              <span class="project-type">Web Application</span>
-            </div>
-            <h3>Aplikasi Web Perpustakaan</h3>
-            <p class="card-body">
-              Aplikasi pengelolaan perpustakaan yang dibangun saat memenangkan LKS WebDev 2025. Dilengkapi fungsi penuh Create, Read, Update, Delete (CRUD) untuk sirkulasi buku dan katalog.
+          <article class="card project-card">
+            <span class="card-kicker">Web Application</span>
+            <h3 class="card-heading">Aplikasi Web Perpustakaan</h3>
+            <p class="card-text">
+              Sistem manajemen katalog dan data sirkulasi perpustakaan dengan fungsionalitas penuh Create, Read, Update, Delete (CRUD). Dibangun dan diuji pada ajang LKS WebDev 2025.
             </p>
-            <div class="tech-stack">
-              <span>Laravel Breeze</span>
-              <span>PHP</span>
-              <span>Blade</span>
-              <span>Bootstrap</span>
+            <div class="stack-list">
+              <span class="stack-item">PHP</span>
+              <span class="stack-item">Laravel Breeze</span>
+              <span class="stack-item">Blade</span>
+              <span class="stack-item">Bootstrap</span>
             </div>
-          </div>
+          </article>
 
-          <div class="card project-card">
-            <div class="project-header">
-              <span class="project-type">System Concept</span>
-            </div>
-            <h3>CivicVerify</h3>
-            <p class="card-body">
-              Konsep platform web verifikasi dan pelaporan bantuan sosial untuk meningkatkan transparansi penyaluran. Merancang arsitektur alur multi-peran (warga, konsultan, surveyor, monitoring publik) dan validasi status laporan.
+          <article class="card project-card">
+            <span class="card-kicker">System Design</span>
+            <h3 class="card-heading">CivicVerify</h3>
+            <p class="card-text">
+              Rancangan platform verifikasi bansos berbasis partisipasi masyarakat. Menstrukturkan alur kerja multi-peran (warga pelapor, konsultan, surveyor lapangan, dan pengawas publik) untuk validitas data penerima bantuan.
             </p>
-            <div class="tech-stack">
-              <span>System Design</span>
-              <span>Workflow Modeling</span>
-              <span>Validation Logic</span>
+            <div class="stack-list">
+              <span class="stack-item">System Modeling</span>
+              <span class="stack-item">Validation Rules</span>
+              <span class="stack-item">Role Access Flow</span>
             </div>
-          </div>
+          </article>
 
-          <div class="card project-card">
-            <div class="project-header">
-              <span class="project-type">Apparel & Graphic Design</span>
-            </div>
-            <h3>Desain Kustom Hoodie</h3>
-            <p class="card-body">
-              Karya desain grafis apparel berupa kustomisasi hoodie personal yang dibuat khusus sebagai wujud apresiasi personal kepada sahabat. Mengutamakan ketepatan tipografi, komposisi visual, dan penempatan elemen cetak.
+          <article class="card project-card">
+            <span class="card-kicker">Graphic & Apparel Design</span>
+            <h3 class="card-heading">Desain Kustom Hoodie</h3>
+            <p class="card-text">
+              Proyek kustomisasi desain pakaian yang dikerjakan secara personal sebagai bentuk apresiasi kepada sahabat. Mengutamakan ketepatan tata letak grafis, komposisi tipografi, dan keselarasan estetika bahan.
             </p>
-            <div class="tech-stack">
-              <span>Graphic Design</span>
-              <span>Apparel Customization</span>
-              <span>Visual Layout</span>
+            <div class="stack-list">
+              <span class="stack-item">Apparel Design</span>
+              <span class="stack-item">Graphic Layout</span>
+              <span class="stack-item">Typography</span>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Keahlian -->
-    <section id="skills" class="section">
+    <section id="skills" class="section section-border">
       <div class="container">
-        <h2 class="section-title">Keahlian</h2>
+        <div class="section-header">
+          <span class="section-tag">Kompetensi</span>
+          <h2 class="section-title">Keahlian & Kemampuan</h2>
+        </div>
         <div class="grid-2">
           <div class="card">
-            <h3>Teknis & Pemrograman</h3>
-            <div class="skills-list">
-              <div class="skill-category">
-                <strong>Bahasa & Framework:</strong>
-                <p>PHP, Laravel, Vue.js, HTML, CSS, JavaScript</p>
-              </div>
-              <div class="skill-category">
-                <strong>Basis Data & Tools:</strong>
-                <p>MySQL, Git & GitHub, Visual Studio Code</p>
-              </div>
-              <div class="skill-category">
-                <strong>Multimedia & IT Support:</strong>
-                <p>Video Editing, Timecoding, Troubleshooting PC & Printer, Konfigurasi Jaringan & IP Lokal</p>
-              </div>
-            </div>
+            <h3 class="card-heading">Teknologi & Multimedia</h3>
+            <dl class="skill-group">
+              <dt>Bahasa Pemrograman & Web</dt>
+              <dd>PHP, HTML, CSS, JavaScript, Laravel, Vue.js</dd>
+
+              <dt>Basis Data & Perangkat Pengembang</dt>
+              <dd>MySQL, Git, GitHub, Visual Studio Code</dd>
+
+              <dt>Dukungan IT & Multimedia</dt>
+              <dd>Troubleshooting Perangkat Keras, Pengaturan Jaringan Lokal, Timecoding, Video Editing</dd>
+            </dl>
           </div>
+
           <div class="card">
-            <h3>Keahlian Kerja & Produktivitas</h3>
-            <div class="skills-list">
-              <div class="skill-category">
-                <strong>Aplikasi Produktivitas:</strong>
-                <p>Microsoft Office (Word, Excel, PowerPoint)</p>
-              </div>
-              <div class="skill-category">
-                <strong>Kemampuan Profesional:</strong>
-                <p>Software System Design, Problem Solving Lapangan, Manajemen Waktu, Kolaborasi Tim & Kepemimpinan</p>
-              </div>
-            </div>
+            <h3 class="card-heading">Produktivitas & Kolaborasi</h3>
+            <dl class="skill-group">
+              <dt>Aplikasi Kantor</dt>
+              <dd>Microsoft Word, Microsoft Excel, Microsoft PowerPoint</dd>
+
+              <dt>Manajemen Kerja & Perilaku Profesional</dt>
+              <dd>Perancangan Alur Sistem, Pemecahan Masalah Lapangan, Manajemen Waktu, Koordinasi Tim</dd>
+            </dl>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Kontak -->
-    <section id="contact" class="section bg-alt">
+    <section id="contact" class="section section-alt section-border">
       <div class="container text-center">
-        <h2 class="section-title">Hubungi Saya</h2>
-        <p class="contact-subtitle">Terbuka untuk diskusi proyek teknologi, kolaborasi IT, maupun peluang kerja profesional.</p>
-        
-        <div class="contact-box">
-          <div class="contact-item">
-            <span class="contact-label">Email</span>
-            <a href="mailto:samuelsofficials28@gmail.com" class="contact-value">samuelsofficials28@gmail.com</a>
+        <div class="section-header">
+          <span class="section-tag">Komunikasi</span>
+          <h2 class="section-title">Hubungi Saya</h2>
+        </div>
+        <p class="contact-lead">
+          Terbuka untuk diskusi teknis, kolaborasi proyek pengembangan web, maupun kesempatan kerja profesional.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="contact-type">Surel Langsung</span>
+            <a href="mailto:samuelsofficials28@gmail.com" class="contact-link">samuelsofficials28@gmail.com</a>
           </div>
-          <div class="contact-item">
-            <span class="contact-label">Telepon / WhatsApp</span>
-            <a href="https://wa.me/6281298282154" target="_blank" rel="noopener noreferrer" class="contact-value">+62 812 9828 2154</a>
+
+          <div class="contact-card">
+            <span class="contact-type">WhatsApp / Telepon</span>
+            <a href="https://wa.me/6281298282154" target="_blank" rel="noopener noreferrer" class="contact-link">+62 812 9828 2154</a>
           </div>
-          <div class="contact-item">
-            <span class="contact-label">Lokasi</span>
-            <span class="contact-value">Kresek Indah II no 17E, Jakarta Barat, Indonesia</span>
+
+          <div class="contact-card">
+            <span class="contact-type">Domisili</span>
+            <span class="contact-text">Kresek Indah II no 17E, Jakarta Barat, Indonesia</span>
           </div>
         </div>
       </div>
@@ -262,8 +281,8 @@
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Samuel Rain Gunawan. Dibuat dengan HTML, CSS, dan JavaScript murni.</p>
-      <a href="#hero" class="back-to-top">Kembali ke Atas &uarr;</a>
+      <p class="footer-copy">&copy; 2026 Samuel Rain Gunawan. Dibangun tanpa ketergantungan pihak ketiga berlebih.</p>
+      <a href="#hero" class="back-link">Kembali ke Atas &uarr;</a>
     </div>
   </footer>
 
